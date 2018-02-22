@@ -1,0 +1,48 @@
+<!-- <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/eaa7b5dff47940ecbf4293dac50cc5f8/embed?autospin=0.2&amp;autostart=1&amp;preload=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+</div>
+
+
+<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/33b508c86aac4b2d993cadff1045aa78/embed?autospin=0.2&amp;autostart=1&amp;preload=1" autostart="1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+
+</div>
+
+<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/b1b9c8f7c8d945faa54bc022ce4c4f3b/embed?autospin=0.2&amp;autostart=1&amp;preload=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+
+</div> -->
+
+
+<!-- <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='trackingMethod: best; sourceType: webcam;'>
+	
+      <a-anchor hit-testing-enabled='true'>
+   		<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+      </a-anchor>
+      <a-marker-camera type="pattern" patternUrl="pattern-marker.patt"></a-marker-camera>
+
+      <a-marker type='pattern' patternUrl='pattern-marker.patt'></a-marker>
+
+      <a-marker preset=’hiro’></a-marker>
+
+		<a-entity camera></a-entity>
+	</a-scene>
+</body> -->
+
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+<body style="margin : 0px; overflow: hidden;">
+  <a-scene embedded arjs="sourceType: webcam;">
+      <a-marker preset="hiro">
+        <!-- Adding an OBJ file to an AR Project-->
+        <a-entity 
+            obj-model="obj: url(City/City.obj); 
+            mtl: url(City/City.mtl)">
+        </a-entity>
+              
+      </a-marker>
+  <a-entity camera>
+  </a-entity>
+  </a-scene>
+</body>
